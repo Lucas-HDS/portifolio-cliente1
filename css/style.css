@@ -7,6 +7,9 @@
     color: white;
 }
 
+.clear{
+    clear: both;
+}
 
 
 /*** HEADER ***/
@@ -21,7 +24,7 @@ header{
     background-color: #1F2233;
     width: 100vw;
     min-height: 100vh;
-    scroll: hidden;
+    position: relative;
 }
 
 
@@ -61,6 +64,41 @@ header{
     background-color: white;
     padding: 0 5px;
 }
+
+.social-contacts{
+    position: absolute;
+    bottom:40px;
+    right: 200px;
+    border-bottom: 1px solid #0099ff;
+    padding: 5px 20px;
+    border-radius: 25px;
+}
+
+
+.social-contacts a {
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.social-contacts a .fab{
+    font-size: 22px;
+    transition: .5s ease-in-out;
+}
+
+
+.social-contacts a:nth-child(1) .fab:hover{
+    
+    color: #1da1f2;
+    
+}
+
+.social-contacts a:nth-child(2) .fab:hover{
+    
+    color: #0ae779;
+    
+}
+
+
 
 /*** SOBRE ***/
 
@@ -155,3 +193,57 @@ header{
     border: 1px solid rgb(14, 212, 120);
 }
 
+
+/********FOOTER*********/
+
+footer{
+    padding: 20px 2%;
+    max-height: 100%;
+    background-color: #1F2233;
+    height: 40%;
+
+}
+
+footer h2{
+    text-transform: uppercase;
+}
+
+.endereco{
+    float: left;
+    width: 50%;
+}
+
+.endereco p{
+    margin: 10px 0;
+}
+
+.endereco i{
+    color: #0099ff;
+}
+
+.caminho-site{
+    float: left;
+    width: 50%;
+}
+
+.caminho-site a{
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    transition: .3s ease-in-out;
+}
+
+.caminho-site a:hover{
+    color: #0099ff;
+}
+
+
+/*****Sub-footer*****/
+
+.sub-footer{
+    height: 50px;
+    background-color: #25273E;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 300;
+}
