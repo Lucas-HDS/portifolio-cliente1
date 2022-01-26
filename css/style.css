@@ -17,6 +17,7 @@
 body,html{
     height: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 
@@ -33,18 +34,19 @@ header{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    height: 100vh;
+    
   
 }
 
 
 .image-info{
-    margin-top: 22px;
+    padding-top: 73px;
     background-image: url(../imagens/natan1.png);
-    width: 450px;
-    height: 600px;
+    width: 425px;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: 100% 100%;
-    
 }
 
 
@@ -118,13 +120,14 @@ header{
     
 }
 
-.titulo-sobre{
+.titulo-sobre, .titulo-habilidades, .titulo-certificacoes{
     position: relative;
     text-align: center;
 
 }
 
-#sobre  .line-title{
+#sobre  .line-title, #habilidades .line-title,
+#certificacoes .line-title{
     position: absolute;
     text-align: center;
     width: 100px;
@@ -134,7 +137,8 @@ header{
     transform: translateX(-50%);
 }
 
-#sobre  .titulo-sobre h2{
+#sobre  .titulo-sobre h2, #habilidades .titulo-habilidades h2,
+#certificacoes .titulo-certificacoes h2{
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 500;
@@ -193,6 +197,92 @@ header{
     border: 1px solid rgb(14, 212, 120);
 }
 
+/*** HABILIDADES ***/
+
+#habilidades{
+    padding-top: 30px;
+    background-color: #1F2233;
+    max-height: 100%;
+    width: 100%;
+
+}
+
+
+ #habilidades .container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 2%;
+    
+}
+
+.habilidade-icone, .certificados-campo{
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.area{
+    width: 150px;
+    height: 200px;
+    background-color: rgba(128, 126, 126, 0.055);
+    border: 10px solid #1F2233;
+    position: relative;
+}
+
+.area h3{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.area img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*** CERTIFICACOES ***/
+
+#certificacoes{
+    padding-top: 30px;
+    background-color: #25273E;
+    max-height: 100%;
+    width: 100%;
+}
+
+
+ #certificacoes .container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2%;
+    
+}
+
+.certificado-single{
+    border:10px solid #25273E;
+}
+
+.certificado-single img{
+    width: 350px;
+    height: 175px;
+    background-size: 100% 100%;
+    
+}
+
+.certificado-single:nth-of-type(2) img{
+    width: 200px;
+    height: 280px;
+}
+
+
+
 
 /********FOOTER*********/
 
@@ -246,4 +336,52 @@ footer h2{
     text-align: center;
     line-height: 50px;
     font-weight: 300;
+}
+
+
+
+/**** RESPONSIVO ****/
+
+@media screen and (max-width: 1000px){
+
+    .info-header{
+        flex-direction: column-reverse;
+        
+      
+    }
+    
+    .descricao-info h1{
+        padding-top: 30px;
+        font-size: 80px;
+        margin-bottom: 20px;
+    }
+    
+    .descricao-info p{
+        font-size: 21px;
+        padding-bottom: 30px;
+    }
+    
+    
+    .descricao-info strong{
+        font-weight: normal;
+        color: #1F2233;
+        background-color: white;
+        padding: 0 5px;
+    }
+    
+    .social-contacts{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .sobre-image{
+        display: none;
+     
+    }
+    
+    .texto-sobre{
+        width: 100%;
+        
+    }
 }
