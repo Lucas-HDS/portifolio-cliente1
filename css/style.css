@@ -116,21 +116,24 @@ header{
 
 }
 
-#sobre .container{
+#sobre .container, #curiosidades .container{
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 2%;
     
 }
 
-.titulo-sobre, .titulo-habilidades, .titulo-certificacoes{
+.titulo-sobre, 
+.titulo-habilidades,
+.titulo-certificacoes, 
+.titulo-curiosidades{
     position: relative;
     text-align: center;
 
 }
 
 #sobre  .line-title, #habilidades .line-title,
-#certificacoes .line-title{
+#certificacoes .line-title, #curiosidades .line-title{
     position: absolute;
     text-align: center;
     width: 100px;
@@ -140,8 +143,10 @@ header{
     transform: translateX(-50%);
 }
 
-#sobre  .titulo-sobre h2, #habilidades .titulo-habilidades h2,
-#certificacoes .titulo-certificacoes h2{
+#sobre  .titulo-sobre h2, 
+#habilidades .titulo-habilidades h2,
+#certificacoes .titulo-certificacoes h2, 
+#curiosidades .titulo-curiosidades h2{
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 500;
@@ -268,31 +273,93 @@ header{
     
 }
 
+
+
 .certificado-single{
     border:10px solid #25273E;
+    
+}
+
+.certificado-single h2{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 6px;
 }
 
 .certificado-single img{
-    width: 350px;
-    height: 175px;
+    width: 280px;
+    height:150x;
     background-size: 100% 100%;
     
 }
 
-.certificado-single:nth-of-type(2) img{
+/*.certificado-single:nth-of-type(2) img{
     width: 200px;
     height: 280px;
 }
+*/
 
+/*** CURIOSIDADES ***/
 
+#curiosidades{
+    background-color: #1F2233 !important;
+    padding-top: 30px;
+    max-height: 100%;
+    width: 100%;
+}
 
+.conteudo-pos{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.texto-pos{
+    width: 60%;
+}
+
+.texto-pos h3{
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.texto-pos p{
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 38px;
+}
+
+.campo-diploma{
+    width: 40%;
+    text-align: center;
+}
+
+.campo-diploma h3{
+    font-size: 15px;
+    font-weight: 300;
+    padding-bottom: 6px;
+}
+
+.campo-diploma img{
+    padding: 10px;
+    border: 1px solid #0099ff;
+    width: 215px;
+    height: 280px;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    text-align: center;
+}
 
 /********FOOTER*********/
 
 footer{
     padding: 20px 2%;
     max-height: 100%;
-    background-color: #1F2233;
+    background-color: black;
     height: 40%;
 
 }
