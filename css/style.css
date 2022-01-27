@@ -41,7 +41,10 @@ header{
 
 .image-info{
     padding-top: 73px;
-    background-image: url(../imagens/natan1.png);
+    
+}
+
+.image-info img{
     width: 425px;
     height: 550px;
     background-repeat: no-repeat;
