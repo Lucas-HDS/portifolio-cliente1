@@ -314,6 +314,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .texto-pos{
@@ -331,6 +332,31 @@ header{
     font-weight: 300;
     text-align: justify;
     line-height: 38px;
+}
+
+.artigo strong{
+    font-weight: 400;
+}
+
+.artigo p{
+    font-size: 18px !important;
+    font-weight: 400 !important;
+}
+
+.artigo > a{
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 153, 255, 0.11);
+    border: 1px solid #0099ff;
+    transition: all 0.25s ease-in-out;
+}
+
+.artigo a:hover{
+    background-color: #0099ff;
 }
 
 .campo-diploma{
