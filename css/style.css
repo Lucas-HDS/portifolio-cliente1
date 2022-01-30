@@ -391,7 +391,7 @@ header{
 
 footer{
     padding: 20px 2%;
-    background-color: black;
+    background-color: #25273E;
     
 
 }
@@ -434,10 +434,11 @@ footer h2{
 
 .sub-footer{
     height: 50px;
-    background-color: #25273E;
+    background-color: #27293d;
     text-align: center;
     line-height: 50px;
     font-weight: 300;
+    filter: drop-shadow(5px 5px 10px #383b5e);
 }
 
 
