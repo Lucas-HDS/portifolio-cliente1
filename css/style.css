@@ -524,19 +524,28 @@ footer h2{
         padding-top: 30px;
         width: 100%;
     }
+
+    .descricao-info p{
+        font-size: 17px;
+    }
+    
     
 }
 
 @media screen and (max-width: 450px){
+    
+    .image-info{
+        margin-top: -45px;
+        
+    }
 
     .descricao-info h1{
-        font-size: 60px;
+        font-size: 70px;
         margin-bottom: 20px;
     }
     
     .descricao-info p{
-        font-size: 17px;
-        padding-bottom: 15px;
+        font-size: 15px;
     }
     
     
