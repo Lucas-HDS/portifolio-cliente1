@@ -62,6 +62,9 @@ header{
     
 }
 
+.quebra{
+    display: none;
+}
 
 .descricao-info strong{
     font-weight: normal;
@@ -126,14 +129,16 @@ header{
 .titulo-sobre, 
 .titulo-habilidades,
 .titulo-certificacoes, 
-.titulo-curiosidades{
+.titulo-curiosidades,
+.titulo-contatos{
     position: relative;
     text-align: center;
 
 }
 
 #sobre  .line-title, #habilidades .line-title,
-#certificacoes .line-title, #curiosidades .line-title{
+#certificacoes .line-title, #curiosidades .line-title,
+#contatos .line-title{
     position: absolute;
     text-align: center;
     width: 100px;
@@ -146,7 +151,8 @@ header{
 #sobre  .titulo-sobre h2, 
 #habilidades .titulo-habilidades h2,
 #certificacoes .titulo-certificacoes h2, 
-#curiosidades .titulo-curiosidades h2{
+#curiosidades .titulo-curiosidades h2,
+#contatos .titulo-contatos h2{
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 500;
@@ -387,6 +393,56 @@ header{
     text-align: center;
 }
 
+/*** CONTATOS ***/
+
+section#contatos{
+    display: none;
+    padding-top: 30px;
+    width: 100%;
+    background: rgb(44,53,68);
+    background: linear-gradient(90deg, rgba(44,53,68,1) 2%, rgba(30,27,61,1) 61%);
+}
+
+#contatos .container{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.social-midias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-midias a i{
+    text-align: center;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(128, 126, 126, 0.055);
+    font-size: 80px;
+    line-height: 150px;
+    margin: 15px;
+    transition: .5s ease-in-out;
+}
+
+.social-midias a:nth-child(1) .fab:hover{
+    color: #1da1f2;
+}
+
+.social-midias a:nth-child(2) .fab:hover{
+    color: #0ae779;
+}
+
+#contatos p{
+    text-align: center;
+    display: block;
+    padding: 30px 0;
+
+}
+
+
+
 /********FOOTER*********/
 
 footer{
@@ -428,6 +484,11 @@ footer h2{
 .caminho-site a:hover{
     color: #0099ff;
 }
+
+.caminho-site a.contact{
+    display: none;
+}
+
 
 
 /*****Sub-footer*****/
@@ -530,7 +591,15 @@ footer h2{
         font-size: 17px;
     }
     
+    section#contatos{
+        display: block;
+    }
+
+    .caminho-site a.contact{
+        display: block;
+    }
     
+
 }
 
 @media screen and (max-width: 450px){
@@ -543,6 +612,11 @@ footer h2{
     .descricao-info h1{
         font-size: 70px;
         margin-bottom: 20px;
+    }
+
+    .quebra{
+        display: block;
+        margin-top: 25px;
     }
     
     .descricao-info p{
