@@ -223,7 +223,7 @@ header{
     
 }
 
-.habilidade-icone, .certificados-campo{
+.habilidade-icone{
     padding: 50px 0;
     display: flex;
     flex-wrap: wrap;
@@ -261,8 +261,7 @@ header{
 #certificacoes{
     padding-top: 30px;
     background-color: #25273E;
-    max-height: 100%;
-    width: 100%;
+    width: 100vw;
 }
 
 
@@ -273,6 +272,15 @@ header{
     
 }
 
+.certificados-campo{
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
 
 
 .certificado-single{
@@ -287,25 +295,24 @@ header{
     padding-bottom: 6px;
 }
 
+/*-moz-border-radius: 10px; /* Implementação Firefox */
+    /*-webkit-border-radius: 10px; /* ISafari e browsers que renderizam via webkit */
+
 .certificado-single img{
     width: 280px;
     height:150x;
     background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     
 }
 
-/*.certificado-single:nth-of-type(2) img{
-    width: 200px;
-    height: 280px;
-}
-*/
 
 /*** CURIOSIDADES ***/
 
 #curiosidades{
     background-color: #1F2233 !important;
     padding-top: 30px;
-    max-height: 100%;
     width: 100%;
 }
 
@@ -384,9 +391,8 @@ header{
 
 footer{
     padding: 20px 2%;
-    max-height: 100%;
     background-color: black;
-    height: 40%;
+    
 
 }
 
@@ -468,6 +474,7 @@ footer h2{
     .social-contacts{
         display: none;
     }
+    
 }
 
 @media screen and (max-width: 900px){
@@ -480,4 +487,46 @@ footer h2{
         width: 100%;
         
     }
+
+    .texto-pos{
+        width: 100%;
+    }
+
+    .campo-diploma{
+        margin-top: 25px;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 550px){
+
+    p.artigo{
+        text-align: center !important;
+    }
+    
+    .artigo > a{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+
+    
+    .endereco{
+        width: 100%;
+    }
+    
+ 
+    
+    .caminho-site{
+        padding-top: 30px;
+        width: 100%;
+    }
+    
+    
+    
+    
+    
 }
